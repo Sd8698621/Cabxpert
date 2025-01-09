@@ -1,4 +1,4 @@
-# Cab Booking Application - README
+# Cab Booking Application
 
 ## Overview
 
@@ -17,6 +17,7 @@ This is a **Cab Booking Application** built using **Expo** and **React Native** 
 3. **Login/Sign-Up**
    - Login via phone number and password with an option for **forgot password**.
    - OTP-based login for quick and secure access.
+   - **Two-Factor Authentication (2FA)** for added security.
 
 4. **Home Screen**
    - Book a ride with the option to set pickup and drop-off locations.
@@ -36,6 +37,7 @@ This is a **Cab Booking Application** built using **Expo** and **React Native** 
 8. **In-App Payment**
    - Multiple payment options (wallet, UPI, card, or cash).
    - Option to add a tip for the driver.
+   - **Gift Card & Coupon Code Integration** for discounts or rewards.
 
 9. **Ride History**
    - Access past rides with the option to rebook favorite trips.
@@ -146,6 +148,9 @@ This is a **Cab Booking Application** built using **Expo** and **React Native** 
 5. **Cross-Promotion with Local Businesses**
    - Partnerships with local businesses, offering discounts or deals for customers and drivers.
 
+6. **Admin Panel**
+   - A dedicated admin panel for managing users, drivers, trips, and promotions. Admins can monitor app performance, track financial transactions, and resolve disputes.
+
 ---
 
 ### Future Enhancements
@@ -164,4 +169,5 @@ This is a **Cab Booking Application** built using **Expo** and **React Native** 
    ```bash
    git clone https://github.com/SRB/
    cd SRB
-   npm run
+   npm install
+   npm run start
