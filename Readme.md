@@ -162,5 +162,6 @@ This is a **Cab Booking Application** built using **Expo** and **React Native** 
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-repo/cab-booking-app.git
-   cd cab-booking-app
+   git clone https://github.com/SRB/
+   cd SRB
+   npm run
