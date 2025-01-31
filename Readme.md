@@ -1,173 +1,201 @@
-# Cab Booking Application
+# CabXpert - Cab Booking Application
 
 ## Overview
+CabXpert is a feature-rich Cab Booking Application built using PHP, MySQL, Laravel, and Flutter. It serves both customers and drivers (captains), providing seamless ride booking, real-time tracking, secure payments, and an intuitive user experience. The app is designed to launch in West Bengal, India, with localized features to meet regional demands.
 
-This is a **Cab Booking Application** built using **Expo** and **React Native** for Android. The app caters to both **customers** and **drivers (captains)**. It allows users to book rides, track drivers, and make payments, while also offering drivers the ability to manage their rides, track earnings, and ensure safety. The app is designed to launch in **West Bengal, India** with features tailored for local needs.
+---
 
 ## Features
-
 ### Customer Interface Features
+#### **User Onboarding**
+- Interactive splash screen with an engaging introductory tour.
+- Easy role selection (Customer or Captain).
+- Language preference selection (Bengali, Hindi, English, etc.).
 
-1. **Splash Screen & Onboarding**
-   - Interactive splash screen with an introductory tour of the app.
+#### **Login & Authentication**
+- Phone number & password login.
+- OTP-based login for fast and secure access.
+- Two-Factor Authentication (2FA) for enhanced security.
 
-2. **Role Selection**
-   - Option to log in as "Customer" and proceed to the booking process if not already logged in.
+#### **Booking a Ride**
+- Set pickup and drop-off locations easily.
+- One-tap access to saved locations and favorite routes.
+- Ride scheduling for future trips.
+- Instant & scheduled booking options.
+- **Emergency Booking (Medical Priority):** High-priority booking option for medical emergencies with faster driver allocation.
+- **Round Trips:** Users can book rides for time-based journeys with scheduled return trips.
+- **Fare Negotiation:** Riders and drivers can negotiate fare prices within a recommended range calculated by the system.
 
-3. **Login/Sign-Up**
-   - Login via phone number and password with an option for **forgot password**.
-   - OTP-based login for quick and secure access.
-   - **Two-Factor Authentication (2FA)** for added security.
+#### **Ride Preferences & Customization**
+- Choose from Economy, Premium, SUV, or Auto-rickshaw.
+- Set preferences for AC, music, pet-friendly rides, and child seats.
+- Option for female-only drivers for enhanced safety.
 
-4. **Home Screen**
-   - Book a ride with the option to set pickup and drop-off locations.
-   - Quick access to saved locations and favorites.
+#### **Real-Time Ride Tracking**
+- Track driver’s location with live ETA.
+- View driver details, including ratings and vehicle information.
 
-5. **Ride Preferences**
-   - Choose cab types (economy, premium, SUV).
-   - Set preferences for AC, child seat, music, and more.
+#### **Fare Estimation & Ride Confirmation**
+- Dynamic pricing based on distance, traffic, and time.
+- Transparent fare breakdown (base fare, distance fare, tax, etc.).
+- Ride confirmation with estimated fare display.
 
-6. **Real-Time Ride Tracking**
-   - View driver's details and track their location in real-time with ETA.
+#### **Payments & Wallet**
+- Multiple payment options: **UPI, E-Wallet, Credit/Debit Cards, Net Banking, Binance Payment Gateway, and Cash**.
+- Auto-payment for seamless transactions.
+- **Gift Card & Coupon Code Integration:** Apply promo codes and gift cards for discounts.
+- Option to tip the driver post-ride.
+- **In-App Wallet & Loyalty Program:** Earn points for each ride and redeem them for discounts and free rides.
 
-7. **Fare Estimation & Ride Confirmation**
-   - Dynamic pricing based on distance, traffic, and time.
-   - Transparent fare breakdown (base fare, distance fare, etc.).
+#### **Ride History & Rebooking**
+- View past rides with details and invoice downloads.
+- Rebook favorite trips with a single tap.
 
-8. **In-App Payment**
-   - Multiple payment options (wallet, UPI, card, or cash).
-   - Option to add a tip for the driver.
-   - **Gift Card & Coupon Code Integration** for discounts or rewards.
+#### **Ride Ratings & Feedback**
+- Rate drivers and rides to improve service quality.
+- Provide written feedback & select reasons for low ratings.
 
-9. **Ride History**
-   - Access past rides with the option to rebook favorite trips.
+#### **Ride-Sharing & Carpooling**
+- Opt for shared rides to reduce costs and environmental impact.
+- Smart ride-matching to find nearby passengers going in the same direction.
+- **Dual Booking at a Time:** If multiple users book for the same or nearby location (e.g., total seats = 4, 1st user books for 2 people, 2nd user books for 1 person, 3rd user books for 1 person), all are allocated to the same driver.
 
-10. **Ride Rating & Feedback**
-    - Rate both the driver and the overall ride experience.
+#### **Safety & Emergency Features**
+- In-app SOS button to alert emergency contacts or authorities.
+- Live ride-sharing with family/friends for safety.
+- AI-powered behavior monitoring (detects abrupt stops, deviations, etc.).
 
-11. **Ride Sharing**
-    - Opt for carpooling to reduce costs and make the service more efficient.
+#### **Notifications & Promotions**
+- Real-time ride updates and promotional alerts.
+- Personalized discounts and offers based on ride history.
 
-12. **Emergency Support**
-    - In-app SOS button to alert authorities or emergency contacts.
+#### **Referral & Loyalty Program**
+- Refer friends and earn rewards or discounts.
+- Earn loyalty points for every ride and redeem them for perks.
 
-13. **Push Notifications**
-    - Receive updates on ride status, promotions, and events.
-
-14. **Referral Program**
-    - Refer friends and family to earn discounts or rewards.
-
-15. **Multilingual Support**
-    - Support for multiple languages, including Bengali and Hindi.
-
-16. **Travel Mode Options**
-    - Choose between "Solo," "Family/Group," or "Business" modes for tailored services.
-
-17. **Customizable Notifications**
-    - Let users customize which notifications they receive.
-
-18. **Loyalty Program**
-    - Earn points for rides and redeem them for discounts or free rides.
+#### **Accessibility Features**
+- Text-to-speech navigation.
+- Voice command booking and ride details.
+- High-contrast UI for visually impaired users.
 
 ---
 
 ### Captain (Driver) Interface Features
+#### **Onboarding & Verification**
+- Easy registration with document upload (license, vehicle details, etc.).
+- Background verification for driver authentication.
 
-1. **Driver Onboarding**
-   - Sign-up process with document uploads (license, vehicle documents, etc.).
-   - GPS-based location tracking for route navigation.
+#### **Login & Dashboard**
+- OTP-based secure login.
+- Dashboard showing daily earnings, ride requests, and trip statistics.
 
-2. **Login/Sign-Up**
-   - Login via phone number and password (or OTP verification).
+#### **Ride Management**
+- Accept/reject ride requests based on availability.
+- Ride navigation with optimized routing.
+- Auto trip-assignment based on location and demand.
+- **Dual Booking Support:** Drivers can accept multiple passengers going in the same direction to optimize earnings.
+- **Fare Negotiation:** Drivers and riders can negotiate fares while ensuring fair pricing through automated recommendations.
 
-3. **Dashboard**
-   - View active ride requests, total earnings, ride statistics, and performance.
+#### **Earnings & Payouts**
+- Daily/weekly/monthly earnings tracking.
+- Instant withdrawal to a linked bank account.
+- Bonus rewards for peak-hour rides.
+- **Driver Rewards:** If a driver completes up to 20 bookings in a month, they receive a special reward.
+- **Per Ride Charges:** The platform deducts a 10% service charge per ride.
+- **Incentives:** Drivers receive 10% of the platform charges as incentives.
 
-4. **Ride Requests**
-   - Display of nearby ride requests with customer details and fare estimate.
-   - Accept or decline ride requests based on availability.
+#### **Driver Safety & Support**
+- Emergency SOS button for driver assistance.
+- AI-powered fatigue detection alerts.
+- Insurance and medical assistance options.
 
-5. **Trip Navigation & Routing**
-   - Optimized navigation with real-time traffic updates and routing suggestions.
+#### **Customer Communication**
+- In-app chat and call with customers.
+- Ride feedback to improve service quality.
 
-6. **Earnings Tracker**
-   - View daily/weekly/monthly earnings and bonuses.
+#### **Fuel & Expense Tracking**
+- Log fuel expenses and maintenance costs.
+- Insights to optimize ride efficiency and earnings.
 
-7. **In-App Messaging & Call**
-   - In-app communication with the customer.
+#### **Smart Ride Suggestions**
+- AI-powered suggestions based on demand and traffic data.
 
-8. **Ride Rating & Feedback**
-   - Rate customers and leave feedback for future improvement.
+#### **Offline Mode**
+- Toggle offline/online mode when needed.
 
-9. **Driver Incentives & Offers**
-   - Promotions and performance-based incentives for drivers.
-
-10. **Emergency SOS**
-    - An emergency button to contact authorities or pre-set contacts.
-
-11. **Shift Management**
-    - Set working hours and receive notifications for high-demand periods.
-
-12. **Fuel & Expense Tracking**
-    - Track fuel consumption, vehicle maintenance, and other operational expenses.
-
-13. **Smart Ride Suggestions**
-    - Suggest optimal routes based on traffic and demand data.
-
-14. **Driver Training & Education**
-    - Access to training modules for improving service and safety.
-
-15. **Offline Mode**
-    - Toggle availability for rides, allowing drivers to go offline when needed.
-
-16. **Referral Program for Drivers**
-    - Referral system for new drivers with bonuses for successful onboarding.
-
-17. **Real-Time Traffic Updates**
-    - Integration with live traffic data to avoid congestion and delays.
-
-18. **Voice Commands for Navigation**
-    - Hands-free voice commands to improve driving experience.
+#### **Driver Training & Support**
+- Video tutorials and guidelines for better service delivery.
 
 ---
 
-### Shared Features for Both Customer and Driver Interfaces
+### Shared Features (Customer & Driver)
+#### **In-App Chat & Voice Calls**
+- Secure, private communication between customers and drivers.
 
-1. **In-App Chat**
-   - Secure, private messaging between customers and drivers.
+#### **Insurance Integration**
+- Ride insurance for both customers and drivers.
 
-2. **Insurance Integration**
-   - Access to in-app insurance services and immediate assistance during emergencies.
+#### **Location-Based Promotions**
+- Discounts and offers based on ride location and frequency.
 
-3. **Location-Based Promotions**
-   - Push notifications for promotions and discounts near local events or landmarks.
+#### **Cross-Promotion with Local Businesses**
+- Exclusive deals with restaurants, shopping malls, and partner businesses.
 
-4. **Push Notifications for Availability**
-   - Notifications alerting users and drivers about nearby rides, new bookings, or offers.
-
-5. **Cross-Promotion with Local Businesses**
-   - Partnerships with local businesses, offering discounts or deals for customers and drivers.
-
-6. **Admin Panel**
-   - A dedicated admin panel for managing users, drivers, trips, and promotions. Admins can monitor app performance, track financial transactions, and resolve disputes.
+#### **Admin Panel & Fleet Management**
+- Monitor live trips, handle disputes, and manage payments.
+- Fraud detection and automated ban for rule violators.
+- Surge pricing management based on demand.
 
 ---
 
-### Future Enhancements
-
-- **Carbon Footprint Tracker**: Show users the environmental impact of their rides and offer eco-friendly ride options.
-- **Accessibility Features**: Ensure the app is fully accessible to people with disabilities, including text-to-speech and visual support.
-- **Advanced Analytics for Drivers**: Provide deeper insights into driver performance, including customer feedback, earnings trends, and operational efficiency.
-- **Expanded Payment Methods**: Add more regional payment options like Paytm, Google Pay, and Cash on Delivery.
-- **Driver Wellness & Support**: Integrate wellness support features like stress-relief exercises, fuel discounts, and driver appreciation programs.
+## Future Enhancements
+- **Carbon Footprint Tracker**: Show users the environmental impact of their rides and suggest eco-friendly options.
+- **Voice-Activated Booking**: Hands-free ride booking using voice commands.
+- **Subscription Model**: Monthly subscription for unlimited rides.
+- **AI-Powered Customer Support**: 24/7 chatbot assistance for ride-related issues.
+- **Driver Wellness Support**: Stress-relief programs and incentive-based performance rewards.
+- **Electric Vehicle Integration**: Exclusive booking options for EV cabs to promote sustainability.
 
 ---
 
 ## Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/SRB/
-   cd SRB
+1. **Clone the Repository:**
+   ```sh
+   git clone https://github.com/SRB/CabXpert.git
+   cd CabXpert
+   ```
+2. **Install Dependencies:**
+   ```sh
+   composer install
    npm install
-   npm run start
+   ```
+3. **Run the Application:**
+   ```sh
+   php artisan serve
+   flutter run
+   ```
+
+---
+
+## License
+This project is licensed under the Apache-2.0 License.
+
+---
+
+## Contributors
+Sayan Dutta - Developer & Maintainer  
+Rhytham Hore - 
+Biswarup Moldal - 
+
+For contributions, feel free to fork the repo and submit pull requests.
+
+---
+
+## Contact & Support
+For any issues or suggestions, reach out via:
+- **Email:** support@cabxpert.com sayandutta@engineer.com
+- **GitHub Issues:** [https://github.com/SRB/CabXpert/issues](https://github.com/SRB/CabXpert/issues)
+- **Community Forum:** [CabXpert Community](#)
+
+**Join us in revolutionizing cab booking with CabXpert! 🚖**
+
