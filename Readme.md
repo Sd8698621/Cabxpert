@@ -184,8 +184,7 @@ This project is licensed under the Apache-2.0 License.
 
 ## Contributors
 Sayan Dutta - Developer & Maintainer  
-Rhytham Hore - 
-Biswarup Moldal - 
+
 
 For contributions, feel free to fork the repo and submit pull requests.
 
